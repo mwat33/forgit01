@@ -1,3 +1,4 @@
+//2019.12.11更新
 const options = {
     // Required: API key
     key: 'na7wJwLpK0SjabfsCTBbfL6YLi4a8O35', // REPLACE WITH YOUR KEY !!!
@@ -8,7 +9,7 @@ const options = {
     // Optional: Initial state of the map
     lat: 34.718,
     lon: 137.562,
-    zoom: 7,
+    zoom: 1,
 };
 
 // Initialize Windy API
@@ -20,7 +21,7 @@ windyInit(options, windyAPI => {
     // .map is instance of Leaflet map
 
     L.popup()
-        .setLatLng([50.4, 14.3])
+        .setLatLng([34.718, 137.562])
         .setContent('Hello World')
         .openOn(map);
 });
