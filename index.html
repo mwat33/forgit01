@@ -72,7 +72,6 @@ img {
         var imgStr4 = 'rg=day&';    //'day':1日分　'week':7日分　'month':30日分
         var imgStr5 = 'w=768&h=512&lc=blue&gcs=cyan&gcf=blue&ld=off&ttd=on&tsmd=on">'
 
-
         //日付
         var d = new Date();
         var year = d.getFullYear();
@@ -152,8 +151,9 @@ img {
 
         //ホーム港
         homHarBtn.onclick = function(){
-            pc = fav_pc[0];
-            hc = fav_hc[0];
+            fcnt = 0;
+            pc = fav_pc[fcnt];
+            hc = fav_hc[fcnt];
             review();
         }
 
@@ -188,6 +188,5 @@ img {
     <button type="button" id="nport" class="btn-square-so-pop-2">港▶</button><br>
 <span id="spanTag"></span>
 </div>
-
 </body>
 </html>
