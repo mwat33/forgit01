@@ -1,4 +1,5 @@
 //2019.12.11更新
+//L.popupなし
 const options = {
     // Required: API key
     key: 'na7wJwLpK0SjabfsCTBbfL6YLi4a8O35', // REPLACE WITH YOUR KEY !!!
@@ -20,8 +21,10 @@ windyInit(options, windyAPI => {
     const { map } = windyAPI;
     // .map is instance of Leaflet map
 
+    /*
     L.popup()
         .setLatLng([34.718, 137.562])
         .setContent('Hello World')
         .openOn(map);
+    */
 });
