@@ -36,8 +36,18 @@ img {
     height: auto;
 }
 
+/*windy　 https://api4.windy.com/examples/hello-world*/
+#windy
+{
+                width: 100%;
+                height: 300px;
+}
+
 
 </style>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+<script src="https://api4.windy.com/assets/libBoot.js"></script>
+
 <script>
     //service workerの登録
     if ('serviceWorker' in navigator) {
@@ -186,7 +196,9 @@ img {
     <button type="button" id="pport" class="btn-square-so-pop-2">◀港</button>
     <button type="button" id="hport" class="btn-square-so-pop-2">■港</button>
     <button type="button" id="nport" class="btn-square-so-pop-2">港▶</button><br>
-<span id="spanTag"></span>
+<div id = "windy"></div>
+<script src="windy.js"></script>
+<span id="spanTag">windy追加中12.10</span>
 </div>
 </body>
 </html>
