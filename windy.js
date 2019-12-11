@@ -53,7 +53,7 @@ windyInit(options, windyAPI => {
 
    // Wait since wather is rendered
    broadcast.once('redrawFinished', () => {
-       picker.open({ lat: 48.4, lon: 14.3 });
+       picker.open({ lat: 34.718, lon: 137.562 });
        // Opening of a picker (async)
    });
 
