@@ -17,8 +17,9 @@ const options = {
 windyInit(options, windyAPI => {
     const { map } = windyAPI;
     // .map is instance of Leaflet map
-
+    const { overlays,broadcast } = windyAPI;
+    const windMetric = overlays.wind.metric;
+    overlays.wind.listMetrics();
     overlays.wind.setMetric('m/s');
-
 
 });
